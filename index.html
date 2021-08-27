@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DLEichenberger</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body class="bg-dark">
+    <header class="site-header sticky-top py-1 p-5">
+        <div class="d-flex flex-wrap justify-content-center py-3 mb-4">
+            <a href="#" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-secondary text-decoration-none">
+              <h1>DLEichenberger</h1>
+            </a>
+            <ul class="nav nav-pills">
+              <li class="nav-item"><a href="#" class="nav-link px-2 text-secondary fs-4 pe-5 text-uppercase navbar-hover">projects</a></li>
+              <li class="nav-item"><a href="#" class="nav-link px-2 text-secondary fs-4 pe-5 text-uppercase navbar-hover">myself</a></li>
+            </ul>
+        </div>
+    </header>
+    <main class="text-white container">
+        <div class="row p-5 justify-content-between align-items-start">
+            <div class="col-12 col-sm-6 card p-3 bg-body rounded border border-info border-top-0 border-bottom-0">
+                <div class="card-body">
+                    <h5 class="card-title">Dave Luke Eichenberger</h5>
+                    <p class="card-text">I am an IMS-student cuurently looking for a one year internship.</p>
+                    <div class="row">
+                        <a href="#" class="btn btn-outline-info col-xl-3 col-md-6 col-sm-12 col-6">Contact me</a>
+                    </div>
+                </div>
+            </div>
+            <div class="offset- col-12 col-sm-5 col-lg-3 p-3 fs-4 bg-body rounded border border-info border-top-0 border-bottom-0" style="margin-top: 5vh;">
+                <ul style="list-style-type: square;">
+                    <li>learning motivated</li>
+                    <li>adaptive</li>
+                    <li>creative</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <!--Hover in Navbar Script-->
+    <script>
+        var hoverColor = "text-info";
+        var unhoverColor = "text-secondary";
+        $(".navbar-hover").hover( function() {
+            $(this).removeClass(unhoverColor);
+            $(this).addClass(hoverColor);
+            $(this).css("text-shadow", "0 0 20px currentColor");
+        }, function() {
+            $(this).css("text-shadow", "none");
+            $(this).addClass(unhoverColor);
+            $(this).removeClass(hoverColor);
+        });
+    </script>
+</body>
+
+
+</html>
