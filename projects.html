@@ -16,8 +16,8 @@
 <body class="bg-dark">
     <header class="site-header bg-dark sticky-top py-1 p-5">
         <div class="d-flex flex-wrap justify-content-center py-3 mb-4">
-            <a href="index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-secondary text-decoration-none">
-              <h1>DLEichenberger</h1>
+            <a href="index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-secondary text-decoration-none title-hover">
+              <h1 class="display-4">DLEichenberger</h1>
             </a>
             <ul class="nav nav-pills d-flex justify-content-center">
               <li class="nav-item pe-3 ps-3"><a href="projects.html" class="nav-link text-secondary fs-4 text-uppercase navbar-hover text-center">projects</a></li>
@@ -25,22 +25,37 @@
             </ul>
         </div>
     </header>
-    <main class="text-white container">
-        <h1>projects</h1>
+    <main class="text-white">
+        <div class="container align-items-between">
+            
+        </div>
     </main>
 
     <!--Hover in Navbar Script-->
     <script>
-        var hoverColor = "text-info";
-        var unhoverColor = "text-secondary";
+        var hoverColorNavbar = "text-info";
+        var unhoverColorNavbar = "text-secondary";
         $(".navbar-hover").hover( function() {
-            $(this).removeClass(unhoverColor);
-            $(this).addClass(hoverColor);
+            $(this).removeClass(unhoverColorNavbar);
+            $(this).addClass(hoverColorNavbar);
             $(this).css("text-shadow", "0 0 20px currentColor");
         }, function() {
             $(this).css("text-shadow", "none");
-            $(this).addClass(unhoverColor);
-            $(this).removeClass(hoverColor);
+            $(this).addClass(unhoverColorNavbar);
+            $(this).removeClass(hoverColorNavbar);
+        });
+    </script>
+    
+    <!--Hover in Title Script-->
+    <script>
+        var hoverColorTitle = "text-light";
+        var unhoverColorTitle = "text-secondary";
+        $(".title-hover").hover( function() {
+            $(this).removeClass(unhoverColorTitle);
+            $(this).addClass(hoverColorTitle);
+        }, function() {
+            $(this).addClass(unhoverColorTitle);
+            $(this).removeClass(hoverColorTitle);
         });
     </script>
 </body>
