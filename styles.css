@@ -1,3 +1,7 @@
 p {
     letter-spacing: 1px;
 }
+
+body {
+    height: 100vh;
+}
