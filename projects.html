@@ -13,7 +13,7 @@
 
     </head>
     <body class="bg-dark">
-        <header class="site-header bg-dark sticky-top px-5 py-3" style="min-height: 15vh">
+        <header class="site-header bg-dark sticky-top px-5 py-3">
             <div class="d-flex flex-wrap justify-content-center">
                 <a href="index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-decoration-none title-hover">
                 <h1 class="display-4">DLEichenberger</h1>
@@ -38,7 +38,8 @@
                                 normal board game called Nine Men's Morris (Mühle). So, I made this game with Unity, which was challenging 
                                 at the beginning. The game works almost perfectly. Except of the fact that it can’t see if there’s no opportunity to move any stone.</p>
                             <p class="card-text">I also want to upgrade my game to an online game sometime, but this will somewhere in the future.</p>
-                            <a href="https://github.com/Xeonigs/Muehle-standalone-1.0" target="_blank" class="btn btn-outline-light">GitHub: Muehle-Unity-Project</a>
+                            <p>If you just want to play it I would recommend downloading the <a href="https://github.com/Xeonigs/Muehle-standalone-1.0">standalone version</a>.</p>
+                            <a href="https://github.com/Xeonigs/Muehle-Unity-Project" target="_blank" class="btn btn-outline-light">GitHub: Muehle-Unity-Project</a>
                         </div>
                         <div class="card-footer text-muted text-right">1. July 2021</div>
                     </div>
@@ -48,10 +49,11 @@
                         <div class="card-body">
                         <h5 class="card-title">Connect4 with a computer to play against</h5>
                         <p class="card-text">I made a normal connect-four game with a console as an interface and a bot that valuates each move and every advanced moves. 
-                            I looked up the MiniMax-principle and coded the code with this idea.</p>
+                            I looked up the MiniMax-principle and coded the code with this idea. But calculating every move is impossible. It has too many possibilities. So, I made a range of depth until it stops.</p>
                         <p class="card-text">My valuation algorithm is buggy because my bot only sees wins or losses. Means if there aren’t enough wins or losses in reach the bot starts to 
-                            make false decisions. A possible fix is to make the valuation a float and valuate each move between 0,0 to 1,0. So, if it has the value 0,9 it 
-                            has a very high chance of winning and 0,1 has a very low chance.</p>
+                            make false decisions.</p>
+                        <p>A possible fix is to make the valuation a float and valuate each move between 0,0 to 1,0. So, if the value of a move is above 0,5 it 
+                            has a higher chance of winning with this move and if its lower than 0,5 the chance is lower. With this valuation it has a more precise decision and has a higher chance of winning the game.</p>
                         <a href="https://github.com/Xeonigs/VierGewinntBot" target="_blank" class="btn btn-outline-light">GitHub: VierGewinntBot</a>
                         </div>
                         <div class="card-footer text-muted text-right">23. June 2021</div>
@@ -75,7 +77,8 @@
                         <div class="card-body">
                         <h5 class="card-title">Chess with Microsoft Forms</h5>
                         <p class="card-text">At the time I made this chess game, we learned to work with windows forms and my idea was to make a game. This was one of my first 
-                            projects, so my code is kind of a spaghetti code. But it is a working chess in with exception of remis and some other special rules. The castling (Rochade) 
+                            projects, so my code is kind of a spaghetti code.</p>
+                        <p>But it is a working chess in with exception of remis and some other special rules. The castling (Rochade) 
                             and changing the pawn into another figure works perfectly. It has no computer to play against and it has to be played on the same pc.</p>
                         <a href="https://github.com/Xeonigs/1500-Schach-oldUpload" target="_blank" class="btn btn-outline-light">GitHub: 1500-Schach-oldUpload</a>
                         </div>
